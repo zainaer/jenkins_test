@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('readfile') {
       steps {
-        ws(dir: 'D:\\soft\\jenkins')
         readFile(file: '1.txt', encoding: 'utf-8')
       }
     }
