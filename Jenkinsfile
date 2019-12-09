@@ -5,6 +5,7 @@ pipeline {
       steps {
         ws(dir: 'C:\\Users\\25242\\.jenkins\\workspace') {
           readFile(file: '1.txt', encoding: 'utf-8')
+          writeFile(file: '2.txt', text: '789', encoding: 'utf-8')
         }
 
       }
